@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HealthyRasoiMess</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: url("bgimag.jpg") no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    header {
+      background-color: hsl(239, 83%, 66%);
+      padding: 40px;
+      text-align: center;
+      color: #fff;
+    }
+
+    nav {
+      margin: 40px 0;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav ul li {
+      display: inline-block;
+      margin-right: 30px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      padding: 5px 10px;
+    }
+
+    .content {
+      padding: 20px;
+      color: rgb(242, 248, 248);
+    }
+
+    .home {
+      background-image: url(home1bgima.jpg);
+      background-size: cover; 
+      background-position: center; 
+      background-color: #f9f9f9;
+    }
+
+    .services {
+      background-image: url(ser1bgimag.jpg);
+      background-size: cover; /* Adjust as needed */
+      background-position: center;
+      background-color: #e6e6e6;
+    }
+
+    .about {
+      background-image: url(ab2bgimag.jpg);
+      background-size: cover; /* Adjust as needed */
+      background-position: center;
+      background-color: #f2f2f2;
+    }
+
+    .container {
+      width: 300px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .container h2 {
+      text-align: center;
+    }
+
+    .container input[type="text"],
+    .container input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .container input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      background-color: rgba(23, 241, 15, 0.575);
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .container input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+    .logo img {
+  width: 150px; /* Adjust the width as needed */
+  height: auto; /* Maintain the aspect ratio */
+}
+.logo {
+  float: left;
+  margin: 10px;
+}
+.loginlogo {
+  float: right;
+  margin: 10px;
+}
+.loginlogo img {
+  width: 150px; /* Adjust the width as needed */
+  height: auto; /* Maintain the aspect ratio */
+}
+
+
+
+body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333;
+      padding: 20px;
+      text-align: center;
+      color: #fff;
+    }
+
+    .containerplan {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #8f3535;
+      border: 1px solid #3212a7;
+      border-radius: 5px;
+    }
+
+    .subscription-plans {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-gap: 20px;
+    }
+
+    .subscription-plan {
+      padding: 20px;
+      border: 1px solid #0fc537;
+      border-radius: 5px;
+      text-align: center;
+    }
+
+    .subscription-plan h3 {
+      margin-bottom: 10px;
+    }
+
+    .subscription-plan p {
+      margin-bottom: 10px;
+    }
+
+    .subscription-plan button {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .subscription-plan button:hover {
+      background-color: #45a049;
+    }
+
+    .mess-selection {
+      margin-top: 20px;
+    }
+
+    .mess-selection label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .mess-selection select {
+      width: 100%;
+      padding: 5px;
+      border-radius: 5px;
+    }
+
+    .mess-selection button {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .mess-selection button:hover {
+      background-color: #45a049;
+    }
+
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333;
+      padding: 20px;
+      text-align: center;
+      color: #fff;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #c45757;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .notifications {
+      margin-bottom: 20px;
+    }
+
+    .notification {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #bb3d3d;
+      margin-bottom: 10px;
+    }
+
+    .notification h3 {
+      margin: 0;
+    }
+
+    .notification p {
+      margin: 5px 0;
+    }
+
+    .communication-form {
+      margin-bottom: 20px;
+      background-color: #c45757;
+    }
+
+    .communication-form textarea {
+      width: 100%;
+      height: 100px;
+      resize: vertical;
+      background-color: #3f3b3a;
+    }
+
+    .communication-form button {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: #dfdada;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .communication-form button:hover {
+      background-color: #45a049;
+    }
+    
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333;
+      padding: 20px;
+      text-align: center;
+      color: #fff;
+    }
+
+    .containermesslist {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #b64343;
+      border: 1px solid #6d1acc;
+      border-radius: 5px;
+    }
+
+    .mess-listing {
+      margin-bottom: 20px;
+    }
+
+    .mess-listing label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .mess-listing input[type="text"],
+    .mess-listing textarea {
+      width: 100%;
+      padding: 5px;
+      border-radius: 5px;
+    }
+
+    .mess-listing button {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .mess-listing button:hover {
+      background-color: #45a049;
+    }
+
+    .mess-results {
+      margin-top: 20px;
+    }
+
+    .mess-results h3 {
+      margin-bottom: 10px;
+    }
+
+    .mess-results p {
+      margin-bottom: 10px;
+    }
+
+    .mess-item {
+      background-color: #f9f9f9;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+
+    .mess-item:hover {
+      background-color: #e9e9e9;
+    }
+
+    .selected-mess {
+      background-color: #4CAF50;
+      color: #fff;
+    }
+
+    #myheading {
+  color: rgb(41, 4, 143); /* Change this to your desired text color */
+  font-size: 50px;
+}
+
+  #myjoin{
+    color: #3212a7;
+    font-size: 50px;
+  }
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="loginlogo">
+      <a href="index.html">
+        <img src="loginlogo.jpg" alt="HealthyRasoiMess logo" >
+        <span class="loginlogo"><li><a href="#Login">LOGIN</a></li></span>
+      </a>
+    </div>
+    <div class="login">
+      <a href="login.html"></a>
+    </div>
+    <div class="logo">
+      <a href="index.html">
+        <img src="logo.jpg" alt="HealthyRasoiMess Logo">
+      </a>
+    </div>
+    <h1>HealthyRasoiMess</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#join">JOIN</a></li>
+        <li><a href="#Login">LOGIN</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="content home" id="home">
+    <h2>Home</h2>
+    <h3>Welcome to HealthyRasoiMess!</h3>
+    <p>We are your one-stop solution for all your local mess needs. At HealthyRasoiMess, we understand the challenges both mess owners and customers face in finding each other and ensuring a satisfying mess experience. That's why we have created a platform that connects mess owners with customers, making it easier than ever to discover and choose the best</p>
+    <h4>Our Mission:</h4>
+    <p>At HealthyRasoiMess, our mission is to bridge the gap between mess owners and customers, creating a seamless and enjoyable experience for both parties. We strive to support local mess businesses by providing them with a digital platform to thrive, while also empowering customers to find their go-to mess easily. We believe that everyone deserves a nutritious, hygienic, and flavorsome dining experience, and we are committed to making that a reality.</p>
+    <p>Join HealthyRasoiMess today and experience the convenience of finding the best mess in your area. Say goodbye to the struggle of searching for a reliable mess and say hello to delicious meals delivered straight to your doorstep through Tifin or you can go into the mess and explore there itself . Let us be your guide in the world of wholesome and delectable food.</p>
+    
+    <div class="notification">
+      <h3>Promotional Offer</h3>
+      <p>Get 20% off on all meals this weekend. Use code WEEKEND20 at checkout.</p>
+    </div>
+    <!-- Home page content goes here -->
+  </div>
+  <div class="content #Login" id="Login"></div>
+
+  <div class="container">
+   <h2>Login</h2>
+   <form id="loginForm" onsubmit="return validateForm()">
+     <input type="text" id="username" placeholder="Username" required>
+     <input type="password" id="password" placeholder="Password" required>
+     <input type="submit" value="Login">
+   </form>
+ </div>
+
+ <script>
+  function validateForm() {
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+
+    // Add your own validation logic here
+    if (username === "admin" && password === "password") {
+      alert("Login successful!");
+      return true;
+    } else {
+      alert("Invalid username or password!");
+      return false;
+    }
+  }
+</script>
+
+
+  <div class="content services" id="services">
+    <h2>Services</h2>
+    <h3>Services Offered by HealthyRasoiMess</h3>
+    <p>At HealthyRasoiMess, we offer a range of services aimed at connecting you with the best local messes in your area. Our platform is designed to solve the common challenges faced by both mess owners and customers. Here are the services we provide:</p>
+    <h4>1.Mess Directory and Profiles:</h4>
+    <p>Discover a wide selection of local messes through our comprehensive mess directory. We curate and feature a diverse range of messes that meet our high standards for hygiene, taste, and customer service. Each mess has its own profile, allowing you to explore their specialties, menus, pricing, and customer reviews. Our platform empowers you to make informed decisions and find the mess that best suits your preferences.</p>
+    <h4>2.Customer-Mess Connection:</h4>
+    <p>We facilitate a seamless connection between mess owners and customers. Mess owners can showcase their messes and attract customers through their dedicated profiles, while customers can explore messes, view their offerings, and connect with their preferred mess directly. Say goodbye to the hassle of searching for a mess and waiting for availability—our platform streamlines the process, making it easier than ever to connect with your desired mess.</p>
+    <h4>3.Tiffin Services:</h4>
+    <p>In addition to connecting you with local messes, we also offer convenient tiffin services. Our tiffin services ensure that you can enjoy delicious, home-cooked meals delivered right to your doorstep. Whether you're a busy professional, a student, or someone who prefers the convenience of pre-packaged meals, our tiffin services provide you with a reliable and hassle-free dining option.</p>
+     <h4>4.Customer Reviews and Ratings:</h4>
+    <p>We value the opinions and experiences of our customers. Our platform allows you to leave reviews and ratings for the messes you've tried, helping other customers make informed decisions. Similarly, you can benefit from the reviews and ratings left by others, ensuring transparency and accountability within our community. We believe that feedback is crucial in fostering trust and maintaining the quality of the messes we feature.</p>
+    <h3>More Services:</h3> 
+    <h4>1.Premium Mess Listings:</h4>
+    <p>Offer mess owners the option to upgrade their profiles to a premium listing. This enhanced visibility can include featured placement, increased photo uploads, and priority customer connections. Mess owners can benefit from increased exposure and customer reach, while customers can discover the top-rated messes in their area more easily.</p>
+    <h4>2.Exclusive Deals and Discounts:</h4>
+    <p>Collaborate with mess owners to provide exclusive deals and discounts to customers who book through HealthyRasoiMess. This incentivizes customers to choose messes through our platform, while mess owners can attract new customers and retain existing ones.</p>
+    <h4>3.Customized Meal Plans:</h4>
+    <p>Introduce personalized and customizable meal plans for customers. This service can cater to specific dietary requirements, portion sizes, or meal preferences. Customers can enjoy tailored meal options, ensuring they get the meals they desire while maintaining their health goals.</p>
+    <p>By offering these services, we aim to create a sustainable ecosystem that benefits both mess owners and customers. We are constantly innovating and exploring new opportunities to enhance the HealthyRasoiMess experience and support the growth of local mess businesses.</p>
+     
+    <div class="containerplan">
+      <h2>Subscription and Mess Selection</h2>
+  
+      <div class="subscription-plans">
+        <div class="subscription-plan">
+          <h3>Plan 1</h3>
+          <p>Price: Rs 2300/month</p>
+          <p>Features: Unlimited meals two times in a day </p>
+          <p>You can come and eat </p>
+          <button onclick="selectPlan(1)">Select Plan</button>
+        </div>
+        <div class="subscription-plan">
+          <h3>Plan 2</h3>
+          <p>Price: Rs1400/month</p>
+          <p>Features: One time meal in a day </p>
+          <button onclick="selectPlan(2)">Select Plan</button>
+        </div>
+        <div class="subscription-plan">
+          <h3>Plan 3</h3>
+          <p>Price: Rs 2300 /month</p>
+          <p>Features: Tifin Service two times in a day and will be delivered at your doorstep</p>
+          <button onclick="selectPlan(3)">Select Plan</button>
+        </div>
+      </div>
+  
+      <div class="mess-selection">
+        <h3>Select a Mess</h3>
+        <label for="messSelect">Choose a mess:</label>
+        <select id="messSelect">
+          <option value="">-- Select Mess --</option>
+          <option value="mess1">Mess 1</option>
+          <option value="mess2">Mess 2</option>
+          <option value="mess3">Mess 3</option>
+          <!-- Add more mess options here -->
+        </select>
+        <button onclick="continueToCheckout()">Continue to Checkout</button>
+      </div>
+    </div>
+  
+    <script>
+      let selectedPlan = 0;
+  
+      function selectPlan(planId) {
+        selectedPlan = planId;
+        document.querySelector(".mess-selection").style.display = "block";
+      }
+  
+      function continueToCheckout() {
+        const selectedMess = document.getElementById("messSelect").value;
+        if (selectedMess) {
+          // Proceed to checkout with the selected plan and mess
+          // You can redirect to the checkout page or perform any necessary actions
+          console.log("Selected Plan:", selectedPlan);
+          console.log("Selected Mess:", selectedMess);
+        } else {
+          alert("Please select a mess.");
+        }
+      }
+    </script>
+    
+  
+
+
+    <!-- Services page content goes here -->
+  </div>
+
+  <div class="content join" id="join">
+  <h2 id="myjoin">JOIN</h2>
+   <h3 id="myheading">JOIN us to expand your business</h3>
+
+   <div class="containermesslist">
+    <h2>List your mess here </h2>
+
+    <div class="mess-listing">
+      <h3>Fill the Requuired information below correctly </h3>
+      <label for="messName">Mess Name:</label>
+      <input type="text" id="messName" placeholder="Enter mess name">
+
+      <label for="messLocation">Location:</label>
+      <input type="text" id="messLocation" placeholder="Enter mess location">
+
+      <button onclick="listMess()">List Mess</button>
+    </div>
+
+  </div>
+
+  <script>
+    const messList = [];
+
+    function listMess() {
+      const messName = document.getElementById("messName").value;
+      const messLocation = document.getElementById("messLocation").value;
+
+      if (messName && messLocation) {
+        const mess = {
+          name: messName,
+          location: messLocation
+        };
+
+        messList.push(mess);
+        resetListingForm();
+        displayMessList();
+        console.log("Mess Listed:", mess);
+      } else {
+        alert("Please fill in all fields.");
+      }
+    }
+
+    function resetListingForm() {
+      document.getElementById("messName").value = "";
+      document.getElementById("messLocation").value = "";
+    }
+
+    function displayMessList() {
+      const messListContainer = document.getElementById("messList");
+      messListContainer.innerHTML = "";
+
+      if (messList.length > 0) {
+        messList.forEach((mess, index) => {
+          const messItem = document.createElement("div");
+          messItem.classList.add("mess-item");
+          messItem.textContent = `${mess.name} - ${mess.location}`;
+          messItem.addEventListener("click", () => selectMess(index));
+
+          messListContainer.appendChild(messItem);
+        });
+      } else {
+        const noMessMsg = document.createElement("p");
+        noMessMsg.textContent = "No messes listed yet.";
+        messListContainer.appendChild(noMessMsg);
+      }
+    }
+
+    let selectedMessIndex = -1;
+
+    function selectMess(index) {
+      const messItems = document.getElementsByClassName("mess-item");
+
+      if (selectedMessIndex !== -1) {
+        messItems[selectedMessIndex].classList.remove("selected-mess");
+      }
+
+      selectedMessIndex = index;
+      messItems[selectedMessIndex].classList.add("selected-mess");
+      console.log("Selected Mess:", messList[selectedMessIndex]);
+    }
+  </script>
+
+
+
+
+
+  </div>
+
+ 
+  <div class="content about" id="about">
+    <h2>About Us</h2>
+    <h3>About HealthyRasoiMess</h3>
+    <p>Welcome to HealthyRasoiMess, your trusted platform for connecting local messes with customers and providing convenient tiffin services at your doorstep. Our mission is to revolutionize the way people discover and experience local messes, making it easier for both mess owners and customers to connect and enjoy delicious, home-cooked meals.
+
+      At HealthyRasoiMess, we understand the challenges faced by mess owners in attracting customers and promoting their culinary expertise. Similarly, we recognize the struggle customers face in finding a reliable and high-quality mess that caters to their specific dietary preferences. Our platform serves as a bridge, bringing together mess owners and customers in a seamless and efficient manner.</p>
+    <h4>Our Commitment:</h4>
+    <p>At HealthyRasoiMess, we prioritize quality, reliability, and customer satisfaction. We handpick messes that meet our stringent standards for hygiene, taste, and customer service. We strive to foster a community where mess owners can showcase their culinary talents, and customers can enjoy a diverse range of meals without compromising on health or taste.</p>
+    <p>Join HealthyRasoiMess today and experience the convenience of finding the best mess in your area. Let us take care of your dining needs, connecting you with top-notch messes and delivering tiffin services to your doorstep. Together, let's redefine the way you discover, enjoy, and relish home-cooked meals.</p>
+    
+    <!-- About Us page content goes here -->
+  </div>
+
+  <script>
+    // Smooth scrolling for navigation links
+    var navLinks = document.querySelectorAll('nav a');
+    for (var i = 0; i < navLinks.length; i++) {
+      navLinks[i].addEventListener("click", smoothScroll);
+    }
+
+    function smoothScroll(event) {
+      event.preventDefault();
+      var targetId = this.getAttribute("href");
+      var targetPosition = document.querySelector(targetId).offsetTop;
+      window.scrollTo({
+        top: targetPosition,
+        behavior: "smooth"
+      });
+    }
+  </script>
+ <div class="communication-form">
+  <h3>Send Message to Customers</h3>
+  <textarea placeholder="Type your message here"></textarea>
+  <button onclick="sendMessage()">Send Message</button>
+</div>
+</div>
+
+<script>
+function sendMessage() {
+  // This function will be called when the "Send Message" button is clicked
+  // Implement the logic to send the message to customers here
+  // You can retrieve the message from the textarea and send it to the server or display it in the notifications section
+}
+</script>
+
+
+</body>
+</html>
+
